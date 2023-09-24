@@ -1,6 +1,6 @@
 <div class="">
-  <%# <%= form_with(model: [@single_room, @message], remote: true, class: "flex", data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" } ) do |f| %>
-    <%# <%= f.text_field :content, id: 'chat-text', class: "", autocomplete: 'off' %> %>
-    <%# <%= f.submit data: { disable_with: false }, class: "" %> %>
-  <%# <% end %> %> %>
+  <%= form_with(model: [@single_room, @message], remote: true, class: "flex", data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" } ) do |f| %>
+    <%= f.text_field :content, id: 'chat-text', autocomplete: 'off' %>
+    <%= f.submit data: { disable_with: false } %>
+  <% end %>
 </div>

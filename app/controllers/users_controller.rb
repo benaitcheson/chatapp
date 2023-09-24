@@ -18,4 +18,5 @@ class UsersController < ApplicationController
   def get_name(user, current_user)
     users = [user, current_user].sort_by(&:username)
     "private_#{users.first.username}_#{users.last.username}"
+  end
 end
